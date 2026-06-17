@@ -1,0 +1,9 @@
+ag-example-project/
+  boot.sh
+  detect.sh
+  .agent/
+    agent.sh
+    agent.md
+    limits.conf
+  src/
+  integrity.sum
