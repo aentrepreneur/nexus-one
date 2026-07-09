@@ -1,6 +1,14 @@
+<div align="center">
+
 # NEXUS ONE
 
-Harness Engineering Framework for portable autonomous agents.
+Harness Engineering Framework for portable autonomous agents
+
+![Status](https://img.shields.io/badge/status-Stable-28a745?style=flat-square)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+![Updated](https://img.shields.io/github/last-commit/aentrepreneur/nexus-one?style=flat-square)
+
+</div>
 
 ## Overview
 
@@ -53,28 +61,26 @@ This separation helps keep deployment logic portable and operationally focused.
 
 ```text
 nexus-one/
-  prod-agent/
-    prod-agent.sh
-    modules/
-    templates/
-  remediation/
-  docs/
+├── prod-agent/
+│   ├── prod-agent.sh
+│   ├── modules/
+│   └── templates/
+├── remediation/
+└── docs/
 ```
 
 Generated output pattern:
 
 ```text
 ag-project/
-  boot.sh
-  detect.sh
-  .agent/
-  src/
-  integrity.sum
+├── boot.sh
+├── detect.sh
+├── .agent/
+├── src/
+└── integrity.sum
 ```
 
-See `docs/architecture.md` for the public architecture view and `examples/` for safe layout examples.
-
-## Example Workflow
+## Quick Start (Illustrative)
 
 ```bash
 ./prod-agent.sh --scan /opt/my-project
@@ -82,48 +88,24 @@ See `docs/architecture.md` for the public architecture view and `examples/` for 
 ./prod-agent.sh --validate /opt/ag-my-project
 ```
 
-## Public Use Cases
+## Use Cases
 
-- package an existing project into a deployable autonomous harness
-- create portable monitoring and remediation runtimes
-- establish a repeatable deployment model for agentic systems
-- support human-in-the-loop operational agents in controlled environments
-
-## Why It Matters
-
-NEXUS ONE is an agentic engineering system, not just an agent launcher. It formalizes packaging, deployability, integrity, and runtime behavior so autonomous systems can be treated as real operational components.
-
-## Repository Structure
-
-```text
-nexus-one/
-  README.md
-  docs/
-    architecture.md
-    design-principles.md
-    roadmap.md
-    use-cases.md
-  examples/
-    commands.md
-    harness-layout.txt
-    lifecycle.txt
-```
+- Package an existing project into a deployable autonomous harness
+- Create portable monitoring and remediation runtimes
+- Establish a repeatable deployment model for agentic systems
+- Support human-in-the-loop operational agents in controlled environments
 
 ## Documentation
 
-- `docs/architecture.md`: public architecture and execution layers
-- `docs/design-principles.md`: framework intent and design rules
-- `docs/use-cases.md`: scenarios and environments
-- `docs/roadmap.md`: public direction and maturity path
+- `docs/architecture.md` — public architecture and execution layers
+- `docs/design-principles.md` — framework intent and design rules
+- `docs/use-cases.md` — scenarios and environments
+- `docs/roadmap.md` — public direction and maturity path
 
-## Use Cases
+## License
 
-- Portable monitoring agents
-- Autonomous remediation layers
-- Controlled operator-assist systems
-- VPS-deployable agent runtimes
-- Security and operations automation loops
+MIT — see [LICENSE](LICENSE)
 
-## Status
+## Author
 
-Public-facing architecture brief. Internal implementation remains private or selectively published.
+Angel Esquivel — [@aentrepreneur](https://github.com/aentrepreneur)
